@@ -41,6 +41,12 @@ input:invalid, textarea:invalid {
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
+/* Selection colours (easy to forget) */
+::selection 	 	{background: #FFFF9E;}
+::-moz-selection 	{background: #FFFF9E;}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: #FFFF9E;}
 
 //-----------------------------------
 // Add your own custom styles below
