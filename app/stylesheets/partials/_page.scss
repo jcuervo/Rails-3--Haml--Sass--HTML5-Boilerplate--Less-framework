@@ -42,17 +42,19 @@ input:invalid, textarea:invalid {
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
 /* Selection colours (easy to forget) */
-::selection 	 	{background: #FFFF9E;}
-::-moz-selection 	{background: #FFFF9E;}
+::selection 	 	{background: $background-selection;}
+::-moz-selection 	{background: $background-selection;}
 img::selection 		{background: transparent;}
 img::-moz-selection	{background: transparent;}
-body {-webkit-tap-highlight-color: #FFFF9E;}
+body {-webkit-tap-highlight-color: $background-selection;}
 
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
 
-body {}
+body {
+	background: $background-color;
+}
 
 #container {}
 

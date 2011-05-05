@@ -331,12 +331,12 @@ input:invalid, textarea:invalid {
 /* Selection colours (easy to forget) */
 /* line 45, ../../app/stylesheets/partials/_page.scss */
 ::selection {
-  background: #FFFF9E;
+  background: #ffff9e;
 }
 
 /* line 46, ../../app/stylesheets/partials/_page.scss */
 ::-moz-selection {
-  background: #FFFF9E;
+  background: #ffff9e;
 }
 
 /* line 47, ../../app/stylesheets/partials/_page.scss */
@@ -351,7 +351,12 @@ img::-moz-selection {
 
 /* line 49, ../../app/stylesheets/partials/_page.scss */
 body {
-  -webkit-tap-highlight-color: #FFFF9E;
+  -webkit-tap-highlight-color: #ffff9e;
+}
+
+/* line 55, ../../app/stylesheets/partials/_page.scss */
+body {
+  background: #e8e8e8;
 }
 
 @media print {
@@ -431,8 +436,8 @@ px      68    160    252    344    436    528    620    712    804    896    */
 body {
   width: 896px;
   padding: 72px 48px 84px;
-  background: #e8e8e8;
-  color: #3c3c3c;
+  margin: 0 auto;
+  border: 1px solid aqua;
   -webkit-text-size-adjust: 100%;
   /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
