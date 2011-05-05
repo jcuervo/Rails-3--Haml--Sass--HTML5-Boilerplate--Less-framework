@@ -1,4 +1,4 @@
-Disegno::Application.routes.draw do
+App_name::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
