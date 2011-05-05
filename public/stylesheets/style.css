@@ -437,9 +437,12 @@ body {
   width: 896px;
   padding: 72px 48px 84px;
   margin: 0 auto;
-  border: 1px solid aqua;
   -webkit-text-size-adjust: 100%;
   /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+/* line 37, ../../app/stylesheets/partials/_media.scss */
+body header:before {
+  content: 'Normal layout';
 }
 
 /*		Tablet Layout: 768px.
@@ -450,10 +453,14 @@ body {
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 52, ../../app/stylesheets/partials/_media.scss */
+  /* line 54, ../../app/stylesheets/partials/_media.scss */
   body {
     width: 712px;
     padding: 48px 28px 60px;
+  }
+  /* line 57, ../../app/stylesheets/partials/_media.scss */
+  body header:before {
+    content: 'Tablet layout';
   }
 }
 /*		Mobile Layout: 320px.
@@ -464,10 +471,14 @@ px      68    160    252    344    436    528    620    712    */
 cols    1     2      3
 px      68    160    252    */
 @media only screen and (max-width: 767px) {
-  /* line 70, ../../app/stylesheets/partials/_media.scss */
+  /* line 75, ../../app/stylesheets/partials/_media.scss */
   body {
     width: 252px;
     padding: 48px 34px 60px;
+  }
+  /* line 78, ../../app/stylesheets/partials/_media.scss */
+  body header:before {
+    content: 'Mobile layout';
   }
 }
 /*		Wide Mobile Layout: 480px.
@@ -478,13 +489,24 @@ px      68    160    252    */
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 89, ../../app/stylesheets/partials/_media.scss */
+  /* line 97, ../../app/stylesheets/partials/_media.scss */
   body {
     width: 436px;
     padding: 36px 22px 48px;
+  }
+  /* line 100, ../../app/stylesheets/partials/_media.scss */
+  body header:before {
+    content: 'Wide Mobile layout';
   }
 }
 /*	Retina media query.
 	Overrides styles for devices with a 
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+  /* line 118, ../../app/stylesheets/partials/_media.scss */
+  body header:before {
+    content: 'Retina layout';
+  }
+}
