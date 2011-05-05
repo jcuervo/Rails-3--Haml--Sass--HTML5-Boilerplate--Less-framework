@@ -1,9 +1,19 @@
 == An initial project template with Rails3, Haml, Sass, HTML5 Boilerplate, Less Framework 4
 
+
 More information:
 
-Rails 						- http://rubyonrails.org
-Haml 							- http://haml-lang.com
-Sass							- http://sass-lang.com
-HTML5 Boilerplate	- http://html5boilerplate.com
-Less Framework		- http://lessframework.com
+Rails
+http://rubyonrails.org
+
+Haml
+http://haml-lang.com
+
+Sass
+http://sass-lang.com
+
+HTML5 Boilerplate
+http://html5boilerplate.com
+
+Less Framework
+http://lessframework.com
